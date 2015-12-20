@@ -23,7 +23,6 @@ public class BindingController {
     @RequestMapping(value = "/admin/addBinding", method = RequestMethod.GET)
     public String addBinding(Model model)
     {
-        //model.addAttribute("urlcont", request.getRequestURL());
         model.addAttribute("stationBinding", new StationBinding());
         return "admin/addBinding";
     }
